@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Calculator</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+        <div class="calculator">
+            <h1>MY CALCULATOR</h1>
+            <div class="display">
+                <!-- Textarea to display the calculation and Results-->
+                <input type="text" class="textDisplay" id="display" disabled>
+
+              
+            </div>
+            <div class="keys">
+<button class="Num" onclick="appendToDisplay('1')">
+1
+</button>
+<button class="Num" onclick="appendToDisplay('2')">
+2
+</button>
+<button class="Num" onclick="appendToDisplay('3')">
+3
+</button>
+<button class="Num" onclick="appendToDisplay('4')">
+4
+ </button>
+<button class="Num" onclick="appendToDisplay('5')">
+5
+</button>
+<br>
+<button class="Num" onclick="appendToDisplay('6')">
+6
+</button>
+<button class="Num" onclick="appendToDisplay('7')">
+7
+</button>
+<button class="Num" onclick="appendToDisplay('7')">
+8
+</button>
+<button class="Num" onclick="appendToDisplay('9')">
+9
+</button>
+<button class="Num" onclick="appendToDisplay('0')"> 
+     0
+</button>
+
+</div>
+            <div class="arithmeticOperation">
+                <button class="Num" onclick="appendToDisplay('+')">
+                    +
+                    </button>
+
+                    <button class="Num" onclick="appendToDisplay('-')">
+                    -
+                    </button>
+
+                    <button class="Num" onclick="appendToDisplay('*')">
+                    *
+                    </button>
+
+                    <button class="Num" onclick="appendToDisplay('/')">
+                    /
+                     </button>
+
+                    <button class="Num" onclick="appendToDisplay('%')">
+                    %
+                </button>
+                
+                <div class="equalClear">
+                <button class="equalAC" onclick="calculateResult()">
+                    =
+                </button>
+
+                <button class="equalAC" onclick="clearDisplay()">
+                   C
+                </button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+
+    </body>
